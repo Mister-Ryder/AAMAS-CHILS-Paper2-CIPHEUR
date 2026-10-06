@@ -83,8 +83,8 @@
     },
     {
       "path": "evidence/online_v2_round1_chils_summary.csv",
-      "bytes": 661,
-      "sha256": "d73f52e672b7aee780659d80fa35501f8ec47eaf5d4eb3643f230df9c4960345"
+      "bytes": 658,
+      "sha256": "d5c7b6dab1b0567ae6a42989aa6adca08ccfada9ae18734ff26fddb4095bcf5a"
     },
     {
       "path": "evidence/online_v2_round2_chils_results.json",
@@ -93,8 +93,8 @@
     },
     {
       "path": "evidence/online_v2_round2_chils_summary.csv",
-      "bytes": 659,
-      "sha256": "484c38ee471006e4c60b4e8f553467f52346d31f11ebc836e2c513b8bcbbcb10"
+      "bytes": 656,
+      "sha256": "f98539fc2e688b09b8f3310f137684fd3e0ddd1684c908179192daa1b5451875"
     },
     {
       "path": "evidence/release_validation.json",
@@ -233,5 +233,5 @@
     }
   ],
   "file_count_including_manifest": 47,
-  "bytes_excluding_manifest": 1448482
+  "bytes_excluding_manifest": 1448476
 }
