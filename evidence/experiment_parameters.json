@@ -1,0 +1,159 @@
+[
+  {
+    "study": "stk_online_llm_v2",
+    "round": 1,
+    "stage": "development",
+    "registered_source_ids": [
+      "CP-AU-r000",
+      "CP-AP-r000",
+      "CP-AU-r001",
+      "CP-AP-r001"
+    ],
+    "budgets_cpu_seconds": [
+      10
+    ],
+    "seeds": [
+      2
+    ],
+    "graphs": 16,
+    "chils_jobs": 32,
+    "populations": [
+      1,
+      4
+    ],
+    "threads_per_run": 1,
+    "registration_relative_path": "experiments/stk_online_llm_v2/registrations/development/registration.json",
+    "registration_sha256": "e6322ac3845b29e19d66beb97d6ad2246520de8e1fb1f61fc9f468881135fe34",
+    "benchmark_sha256": "e03d87950fc9aa68323a9651865a8f9c5b6869fc04af9f2d2792959a1f7b4f06",
+    "metrics_sha256": "67a1964f94b38698f56c36e92dfb548a9a7c29a9b8f0f3d54f86e533f2086fb8",
+    "execution_summary_sha256": "d58e72fd32b3b6307b45cf8aa307d11858ea9cd7a7544ae281ba2865a7397785",
+    "recorded_all_method_job_count": 144,
+    "recorded_all_method_complete_job_count": 144,
+    "recorded_all_method_failed_job_count": 0,
+    "common_seed": "same exact online_v2 degree_seed definitions in adapters/stk_v2/graph.py",
+    "graph_configs": [
+      "gW0340_gE0340_s0150",
+      "gW0340_gE1200_s0150",
+      "gW1200_gE0340_s0150",
+      "gW1200_gE1200_s0150"
+    ]
+  },
+  {
+    "study": "stk_online_llm_v2",
+    "round": 2,
+    "stage": "development_round2",
+    "registered_source_ids": [
+      "CP-AU-r000",
+      "CP-AP-r000",
+      "CP-AU-r001",
+      "CP-AP-r001"
+    ],
+    "budgets_cpu_seconds": [
+      10
+    ],
+    "seeds": [
+      2
+    ],
+    "graphs": 16,
+    "chils_jobs": 32,
+    "populations": [
+      1,
+      4
+    ],
+    "threads_per_run": 1,
+    "registration_relative_path": "experiments/stk_online_llm_v2/registrations/development_round2/r2/registration.json",
+    "registration_sha256": "26bc4f411414a7599eb85fb55f074db5ad010a0c1ca19182a60a113a44936648",
+    "benchmark_sha256": "8d015fafcd68ea44303e6ddc421cfb6235e840988b37fc87ba3e5e67b754fbce",
+    "metrics_sha256": "0e4092711b27f14f227a91753ba0130153aff27ac951349094b3e382588e0cd1",
+    "execution_summary_sha256": "610db87511102d6adc974abef17322c46051e91d63d5b40cf51d5400cc00495c",
+    "recorded_all_method_job_count": 144,
+    "recorded_all_method_complete_job_count": 144,
+    "recorded_all_method_failed_job_count": 0,
+    "common_seed": "same exact online_v2 degree_seed definitions in adapters/stk_v2/graph.py",
+    "graph_configs": [
+      "gW0340_gE0340_s0150",
+      "gW0340_gE1200_s0150",
+      "gW1200_gE0340_s0150",
+      "gW1200_gE1200_s0150"
+    ]
+  },
+  {
+    "study": "stk_full_llm_v1",
+    "freeze_relative_path": "experiments/stk_full_llm_v1/freeze_execution.json",
+    "freeze_sha256": "f77d06e84e365a2c4eb121b0d6a2e1a043f52175d9986487d6071df9c7a51bdd",
+    "native_CHILS_executable_sha256": "19610c03f334c6267f94543ad3053d792cba56e9ae211fceb6c36f21750c88a0",
+    "adapter_sha256": "eb11e08e1b2468fd77cf87ef930eb9aa9a55e7b2d86e7cadd85d75d7282edf3f",
+    "budgets_seconds": [
+      2,
+      10
+    ],
+    "budget_clock": "CPU; parent process plus measured native child CPU",
+    "formal_seeds": [
+      2,
+      3,
+      5
+    ],
+    "common_seed": "Complete feasible static weighted-degree schedule, with loading and seed construction charged",
+    "objective_transport": "Original integer microsecond ticks, no rounding or scaling",
+    "dependency_versions_observed_cloud": {
+      "python": "3.11.17",
+      "numpy": "2.4.6"
+    },
+    "populations": [
+      1,
+      4
+    ],
+    "native_threads": 1
+  },
+  {
+    "study": "frozen_v06_performance_r2_eoh_test_v06_003_registered_001",
+    "protocol_sha256": "59395b0b7f4c8460da8e58bcdccaa292b189a627716e1e050c52b7a659ba4cfa",
+    "protocol_relative_path": "experiments/discovery/performance_r2_eoh_test_v06_003_registered_001/protocol.json",
+    "nominal_native_wall_targets": [
+      0.1,
+      1,
+      5
+    ],
+    "native_requests": [
+      {
+        "method": "CHILS",
+        "seed": 1
+      },
+      {
+        "method": "CHILS",
+        "seed": 2
+      },
+      {
+        "method": "CHILS",
+        "seed": 3
+      },
+      {
+        "method": "CHILS_ILS",
+        "seed": 1
+      },
+      {
+        "method": "CHILS_ILS",
+        "seed": 2
+      },
+      {
+        "method": "CHILS_ILS",
+        "seed": 3
+      }
+    ],
+    "populations": {
+      "CHILS": 4,
+      "CHILS_ILS": 1
+    },
+    "native_threads": 1,
+    "common_initializer_population": 4,
+    "common_initializer_seed": 1,
+    "common_initializer_target_fraction": 0.5,
+    "native_hard_wall_guard_seconds": 30,
+    "source_sha256": {
+      "cipheur/advanced_baselines.py": "d0d7533a35f2afd6ce3046fde2e102f4e8074aae25bf29bbdb7af587d155e08f",
+      "cipheur/advanced_baselines_v06.py": "713364f084ef9c3538be275b2437e681e6a9d0457dbc028d621ba0bc71ee4477"
+    },
+    "native_executable_sha256": "19610c03f334c6267f94543ad3053d792cba56e9ae211fceb6c36f21750c88a0",
+    "timing": "Nominal native internal wall targets and cooperative Python repair wall targets. Full native preparation/startup/checking, repair CPU/wall, shared graph loading and actual overshoot retained. Equal targets are not matched end-to-end hard deadlines or language-independent fairness."
+  }
+]

@@ -1,0 +1,311 @@
+{
+  "release_scope": "CHILS official solver and local CHILS-specific experiment adapters only",
+  "upstream": {
+    "url": "https://github.com/KarlsruheMIS/CHILS",
+    "commit": "515952724cd3dcc6c4365a340ecf0f1da782119a",
+    "license": "MIT",
+    "archive_sha256": "9184b98e07f6c0cdc09b92d7b7daf188566ff7137f3b696fc3be37ccefdd135c",
+    "historical_executable_sha256": "19610c03f334c6267f94543ad3053d792cba56e9ae211fceb6c36f21750c88a0",
+    "files": [
+      {
+        "path": "third_party/CHILS/CHILS.png",
+        "sha256": "a197b5016b37c5f92daa3e611bd469c2533e3a07af34c6e6d37c7d47008c133b"
+      },
+      {
+        "path": "third_party/CHILS/LICENSE",
+        "sha256": "9a3ab6868798da45b3f43fb7b56795dbd21d442f10d9d74295f1ab0a30b97997"
+      },
+      {
+        "path": "third_party/CHILS/Makefile",
+        "sha256": "b7ec987c59f9e87eaaf7918fcb78b4f13e478a6d516af248c68ead0408030fd0"
+      },
+      {
+        "path": "third_party/CHILS/README.md",
+        "sha256": "66de82f345c18c4806d280f4474d7b3902d45c0fddd966c53d6b210e3301a456"
+      },
+      {
+        "path": "third_party/CHILS/bin/.gitignore",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "third_party/CHILS/include/chils.h",
+        "sha256": "3d0c6e4cfb618fad8a2415bc1748751ed3314a919f0981cdbba4d7a267de9801"
+      },
+      {
+        "path": "third_party/CHILS/include/chils_internal.h",
+        "sha256": "9f9632a69552c501daec03300fd4c8f2f87190904a12ec167b6929581baf179e"
+      },
+      {
+        "path": "third_party/CHILS/include/graph.h",
+        "sha256": "8e9d38b0c80c68a073440da50759f5770caa36e4467cbdd282ab11cca0bdeba8"
+      },
+      {
+        "path": "third_party/CHILS/include/local_search.h",
+        "sha256": "64bf1cec407f3e38f331a4c0f17d773f58e3f14988b93923f9514cadd32dbd0b"
+      },
+      {
+        "path": "third_party/CHILS/src/chils.c",
+        "sha256": "5fb4fa4189c81e41d1ee6cb09cb6dc1b79ff0faab4475a2e0e095e3fc4d8a6e6"
+      },
+      {
+        "path": "third_party/CHILS/src/chils_internal.c",
+        "sha256": "3957fe991dfbd0913b74f6608ead3b217cdf7bf61eb329af95a669eb176a9937"
+      },
+      {
+        "path": "third_party/CHILS/src/graph.c",
+        "sha256": "4b684cf91ece5690ede3fe1fa80237e8081aef3204001e99f0db10ad11e9db26"
+      },
+      {
+        "path": "third_party/CHILS/src/local_search.c",
+        "sha256": "72b9ce55083d5c4f4e5b91ba02a95cad01776b3b047c280eb96e4bca4cc3ac6e"
+      },
+      {
+        "path": "third_party/CHILS/src/main.c",
+        "sha256": "d67f7700f1150c4c0faa3ff03eea3559252d16adb49fe112f70563b5ae4741d4"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "original_relative_path": "cipheur/advanced_baselines.py",
+      "original_sha256": "d0d7533a35f2afd6ce3046fde2e102f4e8074aae25bf29bbdb7af587d155e08f",
+      "release_path": "adapters/legacy/advanced_baselines.py",
+      "mode": "byte-identical original transport wrapper; only CHILS branches are exposed by public runner"
+    },
+    {
+      "original_relative_path": "cipheur/advanced_baselines_v06.py",
+      "original_sha256": "713364f084ef9c3538be275b2437e681e6a9d0457dbc028d621ba0bc71ee4477",
+      "release_path": "adapters/legacy/advanced_baselines_v06.py",
+      "mode": "byte-identical original transport wrapper; only CHILS branches are exposed by public runner"
+    },
+    {
+      "original_relative_path": "cipheur/advanced_baselines_gcd_v06.py",
+      "original_sha256": "a9b11824e607fb332eea531c0e1f38cb239293551aec88e8a63de103ecaf6ae2",
+      "release_path": "adapters/legacy/advanced_baselines_gcd_v06.py",
+      "mode": "byte-identical original transport wrapper; only CHILS branches are exposed by public runner"
+    },
+    {
+      "original_relative_path": "cipheur/model.py",
+      "original_sha256": "d5968cffb1676a2f4bd73d5ba2715618142059b0c81ec8263f76a79100a8a1d8",
+      "release_path": "adapters/legacy/model.py",
+      "mode": "exact selected definitions plus minimal imports",
+      "definitions": [
+        {
+          "name": "Contact",
+          "start_line": 10,
+          "end_line": 18,
+          "sha256": "2bd8931a400b8cbbef438ce6f394ba4ed354d6fcc2db27fe46f0cd5061576fa6"
+        },
+        {
+          "name": "Graph",
+          "start_line": 21,
+          "end_line": 89,
+          "sha256": "e9bf707eda89df44713c19efc4e4f16919f76a9bdfca8f51e0b368e16f127249"
+        }
+      ]
+    },
+    {
+      "original_relative_path": "experiments/stk_full_llm_v1/scripts/published_weighted_baselines.py",
+      "original_sha256": "eb11e08e1b2468fd77cf87ef930eb9aa9a55e7b2d86e7cadd85d75d7282edf3f",
+      "release_path": "adapters/stk_v1/published_weighted_baselines.py",
+      "mode": "byte-identical original CHILS adapter"
+    },
+    {
+      "original_relative_path": "experiments/stk_full_llm_v1/scripts/full_schedule_execution.py",
+      "original_sha256": "e151df993418149b2429e2bfee7ab7f75c53ba291ea9afd89785a4cda9b489e7",
+      "release_path": "adapters/stk_v1/graph.py",
+      "mode": "exact CHILS graph/seed definitions plus minimal imports",
+      "definitions": [
+        {
+          "name": "value_ticks",
+          "start_line": 29,
+          "end_line": 29,
+          "sha256": "eafb0ac467eaca96f5da217a90da3f16b98ec2dee826a2fd9eb6ba8bce49cdf6"
+        },
+        {
+          "name": "value_exact",
+          "start_line": 30,
+          "end_line": 30,
+          "sha256": "fa5913c730322f7ee0ad67a54cb4f14c13527aab75141df9a537e0de17cac5b1"
+        },
+        {
+          "name": "load_graph",
+          "start_line": 31,
+          "end_line": 58,
+          "sha256": "85a795126ff43cbf8b28570cb1622e36700159412fa027b973fbc6f97dacec60"
+        },
+        {
+          "name": "static_completion",
+          "start_line": 89,
+          "end_line": 100,
+          "sha256": "d7ea4ed251675e1e1e680a4fb9359576f483aa887eb59e753146589ff809876d"
+        }
+      ]
+    },
+    {
+      "experiment_round": 1,
+      "original_relative_path": "scripts/benchmark.py",
+      "original_sha256": "e03d87950fc9aa68323a9651865a8f9c5b6869fc04af9f2d2792959a1f7b4f06",
+      "runtime_archive": "runtime_profile.zip",
+      "runtime_archive_sha256": "1476f02aa58692f88701566b2c411723620dd7064da79bfb31ce94a20156d695",
+      "release_path": "adapters/stk_v2/native.py",
+      "mode": "exact CHILS-only definitions plus minimal imports",
+      "definitions": [
+        {
+          "name": "digest",
+          "start_line": 28,
+          "end_line": 29,
+          "sha256": "6b3226feceec3a51dddb3a1217ceeb389e045f54bc89b2af1f2f1bc25fc251a8"
+        },
+        {
+          "name": "child_cpu",
+          "start_line": 112,
+          "end_line": 118,
+          "sha256": "267da304736045b553854025c4beb9b68ffe31c40524db926de44091be010c49"
+        },
+        {
+          "name": "total_cpu",
+          "start_line": 121,
+          "end_line": 124,
+          "sha256": "f7bd8253227e91e3f331a6740b5e62fd19b4c40e41d0e3ca266d2cfaafd8204b"
+        },
+        {
+          "name": "_base_result",
+          "start_line": 127,
+          "end_line": 133,
+          "sha256": "5f1cfde8800051c03c6495922dd9b7e52d305e1aa6018514a5c97f418d53e034"
+        },
+        {
+          "name": "run_native",
+          "start_line": 136,
+          "end_line": 209,
+          "sha256": "75cdb7d9e288ed001f1e735515186a9c543d43be0918d93260b4cb45240aa34a"
+        }
+      ]
+    },
+    {
+      "experiment_round": 1,
+      "original_relative_path": "code/cipheur/online_v2/solver.py",
+      "original_sha256": "aeaaf15e477e4bd2eed9c8cabdb995ea33ff99c5051379227fda8f3c9b2dccb7",
+      "runtime_archive": "runtime_profile.zip",
+      "runtime_archive_sha256": "1476f02aa58692f88701566b2c411723620dd7064da79bfb31ce94a20156d695",
+      "release_path": "adapters/stk_v2/graph.py",
+      "mode": "exact CHILS-only definitions plus minimal imports",
+      "definitions": [
+        {
+          "name": "IntGraph",
+          "start_line": 21,
+          "end_line": 29,
+          "sha256": "9ed306f6f9be9ae3af253d71c62b0e6532883839ece9e0bd2d1fa396b047223f"
+        },
+        {
+          "name": "load_graph",
+          "start_line": 31,
+          "end_line": 47,
+          "sha256": "5aa70e37494ef8f72b7124d10cac535a1296cb638ad5757032e2b83ba75272a0"
+        },
+        {
+          "name": "Incumbent",
+          "start_line": 49,
+          "end_line": 75,
+          "sha256": "14b46692a62e7f03e63c564526cb2bac79ce0cb0f94a2b4d3e5dedfbc2510b1e"
+        },
+        {
+          "name": "degree_seed",
+          "start_line": 77,
+          "end_line": 81,
+          "sha256": "507b2cbc8eb0daa2e3b4d0c552f831771b7910ba3128d1b3e91951a377d8147f"
+        },
+        {
+          "name": "feasible",
+          "start_line": 83,
+          "end_line": 84,
+          "sha256": "0d6e2856b625e132f13b8985a8a28863f57f213e57ac7e98adc691024dd28da4"
+        }
+      ]
+    },
+    {
+      "experiment_round": 2,
+      "original_relative_path": "scripts/benchmark.py",
+      "original_sha256": "8d015fafcd68ea44303e6ddc421cfb6235e840988b37fc87ba3e5e67b754fbce",
+      "runtime_archive": "runtime_round2.zip",
+      "runtime_archive_sha256": "16b5f108d0b084514e50b75248dd168925642d3ccdae3c99d8b90351f3487acc",
+      "release_path": "adapters/stk_v2/native.py",
+      "mode": "exact CHILS-only definitions plus minimal imports",
+      "definitions": [
+        {
+          "name": "digest",
+          "start_line": 28,
+          "end_line": 29,
+          "sha256": "6b3226feceec3a51dddb3a1217ceeb389e045f54bc89b2af1f2f1bc25fc251a8"
+        },
+        {
+          "name": "child_cpu",
+          "start_line": 112,
+          "end_line": 118,
+          "sha256": "267da304736045b553854025c4beb9b68ffe31c40524db926de44091be010c49"
+        },
+        {
+          "name": "total_cpu",
+          "start_line": 121,
+          "end_line": 124,
+          "sha256": "f7bd8253227e91e3f331a6740b5e62fd19b4c40e41d0e3ca266d2cfaafd8204b"
+        },
+        {
+          "name": "_base_result",
+          "start_line": 127,
+          "end_line": 133,
+          "sha256": "5f1cfde8800051c03c6495922dd9b7e52d305e1aa6018514a5c97f418d53e034"
+        },
+        {
+          "name": "run_native",
+          "start_line": 136,
+          "end_line": 209,
+          "sha256": "75cdb7d9e288ed001f1e735515186a9c543d43be0918d93260b4cb45240aa34a"
+        }
+      ]
+    },
+    {
+      "experiment_round": 2,
+      "original_relative_path": "code/cipheur/online_v2/solver.py",
+      "original_sha256": "afa75d5b09680e8ae0286177982ca9cbabb2c0fb8536a1e37b797810c7d4e405",
+      "runtime_archive": "runtime_round2.zip",
+      "runtime_archive_sha256": "16b5f108d0b084514e50b75248dd168925642d3ccdae3c99d8b90351f3487acc",
+      "release_path": "adapters/stk_v2/graph.py",
+      "mode": "exact CHILS-only definitions plus minimal imports",
+      "definitions": [
+        {
+          "name": "IntGraph",
+          "start_line": 21,
+          "end_line": 29,
+          "sha256": "9ed306f6f9be9ae3af253d71c62b0e6532883839ece9e0bd2d1fa396b047223f"
+        },
+        {
+          "name": "load_graph",
+          "start_line": 31,
+          "end_line": 47,
+          "sha256": "5aa70e37494ef8f72b7124d10cac535a1296cb638ad5757032e2b83ba75272a0"
+        },
+        {
+          "name": "Incumbent",
+          "start_line": 49,
+          "end_line": 75,
+          "sha256": "14b46692a62e7f03e63c564526cb2bac79ce0cb0f94a2b4d3e5dedfbc2510b1e"
+        },
+        {
+          "name": "degree_seed",
+          "start_line": 77,
+          "end_line": 81,
+          "sha256": "507b2cbc8eb0daa2e3b4d0c552f831771b7910ba3128d1b3e91951a377d8147f"
+        },
+        {
+          "name": "feasible",
+          "start_line": 83,
+          "end_line": 84,
+          "sha256": "0d6e2856b625e132f13b8985a8a28863f57f213e57ac7e98adc691024dd28da4"
+        }
+      ]
+    }
+  ],
+  "online_v2_native_and_seed_definitions_identical_between_rounds": true
+}

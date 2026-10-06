@@ -1,0 +1,25 @@
+{
+  "weights_ticks": {
+    "0": 12000000,
+    "1": 8000000,
+    "2": 8000000,
+    "3": 5000000,
+    "4": 7000000,
+    "5": 6000000
+  },
+  "edges": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "2"
+    ],
+    [
+      "4",
+      "5"
+    ]
+  ],
+  "description": "Synthetic six-vertex fixture. Degree seed 24,000,000 ticks; exact optimum 28,000,000 ticks. Not an experimental dataset."
+}

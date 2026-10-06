@@ -1,0 +1,25 @@
+{
+  "description": "One actual TRAIN graph used by both online-v2 development rounds, exported with vertex identifiers replaced by contiguous integers. Contains only original duration weights and symmetric conflict adjacency.",
+  "source": "CP-AU-r000",
+  "config": "gW0340_gE0340_s0150",
+  "split": "train",
+  "original_npz_sha256": "5ae4eba4aa84d82660523a854d277ffb9e2f9870dba85254d2978023468b3396",
+  "export_path": "examples/train_CP-AU-r000_A.metis",
+  "export_sha256": "2014798450abc91453371fb1af55cc7c5f62184011f16cf3f47e67a6c5101fe1",
+  "bytes": 984168,
+  "vertices": 12467,
+  "undirected_edges": 84132,
+  "weight_unit": "integer microseconds",
+  "weight_verified_equal_to_end_minus_start_ticks": true,
+  "weight_sum_ticks": 5421429784609,
+  "historical_native_transport_sha256_matches_both_p1_p4": true,
+  "omitted_fields": [
+    "physical position",
+    "satellite identity",
+    "antenna identity",
+    "contact identity",
+    "timestamps",
+    "local paths",
+    "private experiment metadata"
+  ]
+}

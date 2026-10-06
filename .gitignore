@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+third_party/CHILS/CHILS
+third_party/CHILS/libCHILS.*
+third_party/CHILS/bin/*.o
+third_party/CHILS/bin/*.d
+output/
+output.ids
+_prepare_release.py
